@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var firstName=prompt("Enter your first name: </br>");
+        var lastName=prompt("Enter your last name: ");
+        var fullName=firstName+" ".concat(lastName);// for add string we use 2 method: 1.use "+" and 2. use--> .concat() 
+        document.write("Your full name is: "+fullName);
+        document.write("</br>");
+        document.write("The Uppercase value of your name is: "+ fullName.toUpperCase());
+        document.write("</br>");
+        var len=fullName.length;
+        document.write("The number character of your name is: "+len);
+        document.write("</br>");
+        document.write("The slice of your name between 2 to 5 is: "+fullName.slice(2,5));
+        document.write("</br>");
+        document.write("The 4th number of index value of your name is: "+fullName.charAt(5));
+        document.write("</br>");
+        document.write("Thanks for watching my code.");
+
+    </script>
+</body>
+</html>

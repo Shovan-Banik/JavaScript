@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Student(name,age,phone_num,district,language){
+            this.name=name;
+            this.age=age;
+            this.phone_num=phone_num;
+            this.district=district;
+            this.language=language;
+
+            this.display=function(){
+
+                console.log(this.name);
+                console.log(this.age); 
+                console.log(this.phone_num);
+                console.log(this.district);
+                console.log(this.language); 
+                
+            }
+        }
+
+        var student1=new Student("Shovan",25,"01794792728","tangail",["bangla","english","hindi","chinese"]);
+        var student2=new Student("Puja",22,"01976332454","b.baria",["bangla","hindi","english"]);
+        var student3=new Student("Hridoy",25,"01853464076","jamalpur",["bangla","germani","english"]);
+        var student4=new Student("Shafi",25,"01654098765","tangail",["bangla","english"]);
+
+
+        // document.write(student1console.log
+        // document.write(student1.language+"</br");  
+        // document.write(student1.phone_num);
+
+        student1.display();
+        student2.display();
+
+    </script>
+</body>
+</html>
