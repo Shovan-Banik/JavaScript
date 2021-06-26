@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        num_of_won=0;
+        num_of_lost=0;
+        for(var i=1;i<=7;i++){
+        var guess_Number=parseInt(prompt("Enter your value seven times between 1 to 5 "));
+        random_Number=Math.floor(Math.random()*5)+1;
+        if(guess_Number==random_Number){
+            console.log("You won the game");
+            num_of_won++;
+        }
+        else{
+            console.log("You lost the game. The correct number was "+random_Number);
+            num_of_lost++;
+        }
+    }
+    document.write("Total number of win : "+num_of_won+" times"+"</br>");
+    document.write("Total number of lost : "+num_of_lost+" times");
+    </script>
+</body>
+</html>
