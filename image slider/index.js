@@ -12,7 +12,6 @@ function next(){
         imgtag.src=photos[count];
     }    
 }
-
 function prvs(){
 
     count--;
@@ -23,7 +22,4 @@ function prvs(){
     else{
         imgtag.src=photos[count];
     }    
-
-
-
 }
