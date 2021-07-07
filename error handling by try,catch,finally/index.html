@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        try{ // error handle sudhu matro run time error ar khetre kaj kore, syntex error hle kaj krbe na
+            document.write("shovan is live"+"</br>");
+            document.write(x); // undifine x dici ecce kore jn error kmne handle kore dekhte pari
+
+}catch(err){
+    document.write(err+"</br>"); // err pera meter diye kothay ki error dekhte parbo
+}finally{  // always print hbe eoror thakok ba na thakok
+    document.write("donot worry for this silly error");
+    }
+    </script>
+    
+</body>
+</html>
