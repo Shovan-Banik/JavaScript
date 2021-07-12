@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"//for make my code secure and clean
+        function simple(x="hello is a default value"){//aikhane x ar jonno akta default text deya hoyece
+        //jdi function call korar smy kono value na dey tahole ai default value ta print krbe
+        //aitai holo default pera meter
+            console.log(x);
+        }
+        simple();// aitar khetre hello is a default value print korbe
+        simple("hi shovan");// aitar khtre hi shovan print korbe
+
+        //rest pera meter holo:
+        function value(x,y,...z){//...z holo rest pera meter
+            console.log(`x= ${x}, y= ${y}, z= ${z}`)//using ES6 print method
+        }
+        value(12,35,32,45,56,76,43);//prothom 2 ta value x and y te jbe baki sob z ar vitor jabe
+        // output hbe: x= 12, y= 35, z= 32,45,56,76,43
+    </script>
+</body>
+</html>
