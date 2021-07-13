@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=["adad","adada","adadfaf"];
+        for(let name of num){ // for of loop
+ //(prothome declare tarpor variable name tarpor of tarpor j variable theke data asbe i variable ar nam)
+            console.log(name);
+        }
+
+        // for in loop
+        let name={ // creating object
+            person: "shovan",
+            Id: "162-15=7790",
+            nationality: "bangladeshi"
+        }
+        for(let result in name){ // for in loop
+           // console.log(result);// only print identity , not value print
+            //console.log(name[result]);// value print korar jonno
+            console.log(`${result} : ${name[result]}`); // identity soho value dekhte chaile aivabe print krte hbe
+        }
+    </script>
+</body>
+</html>
