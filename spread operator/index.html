@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1=[1,2,3];// aikhane var ar poriborte let use korci
+        let num2=[4,5,6];// ES6 a var ar aygay let likhte hy
+        let num=[...num1, ...num2]; // ...this is also called spead operator.we can use it any position
+        //... we use as like as rest perameter but in rest pera meter we only use it only last position
+        console.log(`num = ${num}`);// for print i use ES6 function
+
+        let num3=[9,...num2,8];// spread use in middle of an array
+        console.log(num3);
+
+       //object concetenation
+       let a1={
+           name : 'Shovan Banik',
+           phone : '01794792728',
+           age : 25
+       }
+       let b1={  //creating object
+           gmail : 'shovanbanik3@gmail.com',
+           village : 'Balla bazar',
+           Blood_group : 'O+'
+       }
+       console.log("</br>");
+       let ab ={...a1, ...b1}; // concetenet two object using spread
+       console.log(ab);
+       
+    </script>
+</body>
+</html>
