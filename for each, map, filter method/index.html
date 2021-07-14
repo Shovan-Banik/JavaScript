@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // use for each--> for square all the value of normal array
+        var normal=[2,4,5,6,7,9];
+        var square=[]; // for each a emapty array create kora lage...cause aita kono array return kore na
+        normal.forEach(function(x){ // ForEach ar modde sbsmy function ar maddome call dite hy
+            square.push(x*x); // push ar maddome empty array sqaure a value pathano hyce
+        })
+        console.log(square);
+
+        // use map--> for square all the value of normal array
+        var nrml=[3,5,2,6,7,8];
+        var sqar=nrml.map(function(y){
+        // map method nijey akta array return kore tai kono empty array create kra lge ni
+        // sudhu matro array ar nam diye diley hbe exmp: var sqar
+            return y*y;
+        });
+        console.log(sqar);
+
+        // use filter--> for filter the value of normal array
+        var rendom=[3,5,2,6,7,8,353,35632,2442,6353];
+        var filtered=rendom.filter(function(z){
+         // filter method nijey akta array return kore tai kono empty array create kra lge ni
+        // sudhu matro array ar nam diye diley hbe exmp: var filtered
+            return z%2==0; // filter method condition ar maddome check kore tai return a condition dite hyce
+        });
+        console.log(filtered);
+    </script>
+</body>
+</html>

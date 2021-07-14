@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //normal function vs arrow function
+
+        //normal function
+        function normal(num1,num2){
+            return num1+num2;
+        }
+        console.log(normal(2,3));
+
+        // arrow function
+        // moloto aro function ar maddome code k minimize kora jay,,, ES6 ar feature aita
+        const arow = (num1,num2) =>{ // jdi second braket dei tahole arrow function ar vitore return dite hbe baddota molok
+            return num1+num2;
+        }
+        console.log(arow(5,1));
+
+        // simply arrow function ta aivabeo lekha jay
+        const arrw= (num1,num2) => num1+num2; // jdi 2nd braket na dei tahole return dite hbe na
+        //jdi pera miter akta thake tahole first braket dite hy na...sudhu pera meter likhley hy
+        // kinto jdi ak ar odik ba kono pera meter na thake tahole first braket deya baddota molok
+        console.log(arow(6,1));
+        
+    </script>
+</body>
+</html>
