@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let employee=[
+            {
+                name : "Hossen mia",
+                age : 60,
+                amount : 25000
+            },
+            {
+                name : "Abul mia",
+                age : 55,
+                amount : 20000
+            },
+            {
+                name : "Dulal mia",
+                age : 45,
+                amount : 15000
+            },
+            {
+                name : "fajlo mia",
+                age : 52,
+                amount : 8000
+            },
+            {
+                name : "sahin sha haji",
+                age : 65,
+                amount : 17000
+            }
+        ]
+        // normal way to get the name of those employees only who have amount more than 15000
+        function BestEmployee1(){
+            return employee.filter(function(x){
+                return x.amount>15000;
+            }).map(function(y){
+               return y.name;
+            })
+        }
+        console.log(BestEmployee1());
+        // arrow function way to get the name of those employees only who have amount more than 15000
+        const BestEmployee2 = () =>employee.filter((x) => x.amount>15000).map((y)=>y.name);
+        //array object ar value gula prothome akta akta kore filter ar x a asbe then filter hoye map ar y a asbe 
+        // prothome akta arrow function create krci then employee array k filter ar maddome
+        // jader amount 15000 ar besi tader nici tarpor map function ar maddome sudhu name nite bolci
+        console.log(BestEmployee2());
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array destructure
+        let number= [42,53,221,452,124,66];
+        let [num1,num2,num3,num4,num5,num6]=number;// number ar sob value serialy num1,num2...te ase porbe
+        console.log(num1);// normally print krte hole likhte hto number[0]
+        console.log(num4);// normally print krte hole likhte hto number[3]
+        console.log(num6);
+
+        //swap kora
+        var a=[34];
+        var b=[20];
+        [a,b]=[b,a]; // b ar man a te abong a ar man b te push krlm
+        console.log(a);// output asbe a= 20 abong b=34
+        console.log(b);
+
+        //object destructure
+        const student={ //creating object
+            name : "shovan",
+            id : 7790,
+            subject : "CSE"
+          }
+          console.log(student.id);// normal way
+          console.log(student.name);// normal way
+          // now destructure way
+          const{name,id,subject}=student; // destructure
+          console.log(id);
+          console.log(name);
+
+          //nested object
+          const sir={ //creating nested object
+            name : "sathi",
+            id : 01,
+            passion : "math",
+            language : {
+                native : "bangla",
+                fluent : "english"
+            }
+          }
+          const{language,passion}=sir;
+          console.log(language);
+          console.log(passion);
+          console.log(language.native);
+
+          //function perameter destructure
+          //normal way
+        //   const ajaira = (faltu)=>{
+        //       console.log(`${faltu.title}, ${faltu.relegion}, ${faltu.cast}`);
+        //   }
+        //   const faltu={
+        //       title : "banik",
+        //       cast : "kayosto",
+        //       relegion : "hinduism"
+        //   }
+        //   ajaira(faltu);
+          //destruture way
+          const ajaira = ({title,cast,relegion})=>{//destructure
+              console.log(`${title}, ${relegion}, ${cast}`);// print using ES6
+          }
+          const faltu={ // object create
+              title : "banik",
+              cast : "kayosto",
+              relegion : "hinduism"
+          }
+          ajaira(faltu);//call the function
+    </script>
+</body>
+</html>
